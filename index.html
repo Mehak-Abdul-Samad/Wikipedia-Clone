@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <h1>Search Wikipedia</h1>
+        <button id="theme-toggler" aria-pressed="false">Light</button>
+      </div>
+
+      <form id="search-form" autocomplete="off" role="search">
+        <input type="text" id="search-input" placeholder="Enter search term" aria-label="Search term" />
+        <button type="submit">Search</button>
+      </form>
+
+      <div id="search-results" aria-live="polite"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
